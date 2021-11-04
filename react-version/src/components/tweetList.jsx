@@ -1,19 +1,21 @@
+import Tweet from "./tweet"
+
 const TweetList = () => {
   return (
     <section className="tweets">
       <article className="tweet">
         <header className="tweet--header">
-          <img className="tweet--avatar" src="https://i.imgur.com/73hZDYK.png" />
-          <h2 className="tweet--name">Newton</h2>
-          <small className="tweet--handle">@SirIsaac</small>
+          <img className="tweet--avatar" src={ Tweet.avatar } />
+          <h2 className="tweet--name">{ Tweet.lastName }</h2>
+          <small className="tweet--handle">{ Tweet.handle }</small>
         </header>
 
         <div className="tweet--body">
-          <p>If I have seen further it is by standing on the shoulders of giants</p>
+          <p>{ Tweet.body }</p>
         </div>
 
         <footer className="tweet--footer">
-          <small className="footer--age">10 days ago<small>
+          <small className="footer--age">{ Tweet.age }<small>
             <span className="footer--actions">
               <a href="#"><i className="fa fa-flag"></i></a>
               <a href="#"><i className="fa fa-retweet"></i></a>
@@ -23,17 +25,17 @@ const TweetList = () => {
       </article>
       <article className="tweet">
         <header className="tweet--header">
-          <img className="tweet--avatar" src="https://i.imgur.com/nlhLi3I.png" />
-          <h2 className="tweet--name">Descartes</h2>
-          <small className="tweet--handle">@rd</small>
+          <img className="tweet--avatar" src={ Tweet.avatar } />
+          <h2 className="tweet--name">{ Tweet.lastName }</h2>
+          <small className="tweet--handle">{ Tweet.handle }</small>
         </header>
 
         <div className="tweet--body">
-          <p>Je pense , donc je suis</p>
+          <p>{ Tweet.body }</p>
         </div>
 
         <footer className="tweet--footer">
-          <small className="footer--age">10 days ago<small>
+          <small className="footer--age">{ Tweet.age }<small>
             <span className="footer--actions">
               <a href="#"><i className="fa fa-flag"></i></a>
               <a href="#"><i className="fa fa-retweet"></i></a>
